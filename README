@@ -6,3 +6,4 @@
 * cpr - http
 * spdlog - logging
 * std::println, std:string-view
+* CPR + std::jthread - wah? first we're in a blender now we're saving lives?

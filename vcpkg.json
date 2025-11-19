@@ -1,0 +1,11 @@
+{
+  "name": "cpp26-test",
+  "version": "0.1.0",
+  "dependencies": [
+    "nlohmann-json",
+    "cpr",
+    "catch2",
+    "fmt",
+    "spdlog"
+  ]
+}

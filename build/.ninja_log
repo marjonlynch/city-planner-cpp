@@ -1,0 +1,7 @@
+# ninja log v7
+1	304	1763518748566258748	CMakeFiles/cpp26_test.dir/src/string_utils.cpp.o	926e6197964b269d
+3	531	1763518955998490980	CMakeFiles/cpp26_test.dir/src/string_utils.cpp.o	cbcc17d0e0b6454
+3	1351	1763518955998136982	CMakeFiles/cpp26_test.dir/src/main.cpp.o	8102384d3a71fb88
+1352	1457	1763518957346696875	cpp26_test	6bd86bbe16ebdaf
+5	2092	1763519202600696259	CMakeFiles/cpp26_test.dir/src/main.cpp.o	8102384d3a71fb88
+2092	2555	1763519204687701902	cpp26_test	6bd86bbe16ebdaf

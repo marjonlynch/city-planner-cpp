@@ -1,0 +1,128 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 1ab4cafe2df630311257a796cb14c9772e139f124e55f7d73ba1fbadafcb9428
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 82ea176125b32b8bb76f68d2aa079f94a69320d8f339d0ca133f9fa7334971af
+Status: install ok installed
+
+Package: catch2
+Version: 3.11.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 3fe88ea1ef9b1963ec49c1ebc3c27d47e20242bafbe860c0b7973f5a2a3de094
+Description: A modern, C++-native, test framework for unit-tests, TDD and BDD.
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2025-05-29
+Depends: vcpkg-cmake
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: adf833f01b8d72b16da54ff524c15d92ff54dfc313cd6cbb455408e479283245
+Status: install ok installed
+
+Package: openssl
+Version: 3.6.0
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 35490b5bf69bc784128bdc43b8727e54ff9c5b41c05def6c705dd50d9a94fa19
+Description: OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 5c0e334624022813415bf6d28cb0896b7f86a9794d23f2cac914a657e2579ee2
+Description: A compression library
+Status: install ok installed
+
+Package: curl
+Version: 8.17.0
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 9ac285f1ffcfdcd9543ebb15dac041ea976fbeb7e49049efe01f1439885b5a56
+Description: A library for transferring data with URLs
+Default-Features: non-http, ssl
+Status: install ok installed
+
+Package: curl
+Feature: non-http
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enables protocols beyond HTTP/HTTPS/HTTP2/HTTP3
+Status: install ok installed
+
+Package: curl
+Feature: openssl
+Depends: openssl
+Architecture: arm64-osx
+Multi-Arch: same
+Description: TLS support (OpenSSL)
+Status: install ok installed
+
+Package: curl
+Feature: ssl
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Default SSL / TLS implementation.
+Status: install ok installed
+
+Package: cpr
+Version: 1.12.0
+Depends: curl, vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 6a909bd7833f91775c39274cf1bcbc54207fc74a517fcd57b43ad09f2f3ee398
+Description: C++ Requests is a simple wrapper around libcurl inspired by the excellent Python Requests project.
+Default-Features: ssl
+Status: install ok installed
+
+Package: cpr
+Feature: ssl
+Depends: curl
+Architecture: arm64-osx
+Multi-Arch: same
+Description: Enable SSL support
+Status: install ok installed
+
+Package: fmt
+Version: 12.1.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 9c48158f56564a033ba0552a5a86653d618d01a2f00bdedc34ee0bd5420d72d0
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: install ok installed
+
+Package: nlohmann-json
+Version: 3.12.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 170e5d28d5707847a77a6bd68a534eac631355539ae4b254f3d82cefe6b321d8
+Description: JSON for Modern C++
+Status: install ok installed
+
+Package: spdlog
+Version: 1.16.0
+Depends: fmt, vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Abi: 3abfc8b70105688cfa7982aa04b8e66ff5e43728baeb9fb98ecbbe321133a87b
+Description: Very fast, header-only/compiled, C++ logging library.
+Status: install ok installed
+

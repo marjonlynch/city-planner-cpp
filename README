@@ -1,0 +1,8 @@
+# Modern fucking c++
+
+# with the exception of import/modules, still waiting for that to be stable on Mac OSX
+
+* nlohmann-json
+* cpr - http
+* spdlog - logging
+* std::println, std:string-view
